@@ -1,4 +1,4 @@
-module srm/printalphabet
+module piscine
 
 go 1.22.3
 
