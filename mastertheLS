@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ls -tmp
+=======
+ls -trm
+>>>>>>> parent of 231c888 (Add: '/' indicator for directories)
