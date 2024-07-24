@@ -10,8 +10,7 @@ func PrintComb() {
 				z01.PrintRune(j)
 				z01.PrintRune(k)
 				if i == '7' && j == '8' && k == '9' {
-					z01.PrintRune('\n') // No comma and space after the last combination
-				} else {
+					z01.PrintRune('\n')
 					z01.PrintRune(',')
 					z01.PrintRune(' ')
 				}
