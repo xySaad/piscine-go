@@ -1,1 +1,1 @@
-ls -tR | grep .sh | tr -d ".sh"
+ls -tRr | grep .sh | tr -d ".sh"
