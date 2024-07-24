@@ -1,1 +1,1 @@
-find -name '*.sh' | tr -d ".sh"
+ls -R | grep .sh | tr -d ".sh"
