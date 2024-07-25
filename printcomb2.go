@@ -11,7 +11,7 @@ func PrintComb2() {
 					if i < k {
 						print = true
 					} else {
-						if j < l {
+						if i == k && j < l {
 							print = true
 						} else {
 							print = false
