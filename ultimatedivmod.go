@@ -2,8 +2,8 @@ package piscine
 
 func UltimateDivMod(a *int, b *int) {
 
-	alo := *a / *b
+	devided := *a / *b
 	nn := *a % *b
-	*a = alo
+	*a = devided
 	*b = nn
 }
