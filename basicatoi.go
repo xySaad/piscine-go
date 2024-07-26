@@ -4,7 +4,7 @@ func BasicAtoi(s string) int {
 	var numberAsInteger int = 0
 
 	for i := range s {
-		alo := int(s[i] - '0')
+		alo := s[i] - '0'
 		numberAsInteger = numberAsInteger*10 + alo
 	}
 
