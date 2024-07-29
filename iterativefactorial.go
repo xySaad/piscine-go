@@ -1,5 +1,7 @@
 package piscine
 
+import "math"
+
 func IterativeFactorial(nb int) int {
 	if nb < 0 {
 		return 0
@@ -7,7 +9,7 @@ func IterativeFactorial(nb int) int {
 	result := 1
 
 	for i := nb; i >= 1; i-- {
-		if result > 2147483647/i {
+		if result > math.MaxInt/i {
 			return 0
 		}
 		result *= i
