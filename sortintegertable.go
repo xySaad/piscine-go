@@ -10,6 +10,5 @@ func SortIntegerTable(table []int) {
 				table[i+1] = prev
 			}
 		}
-
 	}
 }
