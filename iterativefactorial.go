@@ -9,7 +9,6 @@ func IterativeFactorial(nb int) int {
 	for i := nb; i >= 1; i-- {
 		if result > 147483647/i {
 			return 0
-
 		}
 		result *= i
 	}
