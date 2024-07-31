@@ -2,11 +2,15 @@ package main
 
 import (
 	"os"
-	"piscine"
+
+	"github.com/01-edu/z01"
 )
 
 func main() {
 	if len(os.Args) > 0 {
-		piscine.PrintStr(os.Args[0][2:len(os.Args[0])] + "\n")
+		for i := 2; i < len(os.Args[0]); i++ {
+			z01.PrintRune(rune(os.Args[0][i]))
+		}
+		z01.PrintRune('\n')
 	}
 }
