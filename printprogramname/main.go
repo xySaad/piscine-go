@@ -8,8 +8,10 @@ import (
 
 func main() {
 	if len(os.Args) > 0 {
-		for i := 2; i < len(os.Args[0]); i++ {
-			z01.PrintRune(rune(os.Args[0][i]))
+		for i := 0; i < len(os.Args[0]); i++ {
+			if os.Args[0][i] != '/' && os.Args[0][i] != '.' {
+				z01.PrintRune(rune(os.Args[0][i]))
+			}
 		}
 		z01.PrintRune('\n')
 	}
