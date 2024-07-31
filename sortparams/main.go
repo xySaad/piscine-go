@@ -18,6 +18,7 @@ func sortRunes(table []string) {
 		}
 	}
 }
+
 func main() {
 	if len(os.Args) > 0 {
 		sortRunes(os.Args)
