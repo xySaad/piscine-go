@@ -6,5 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(piscine.Capitalize("}YS=\\kvq`]WTQ"))
+	elems := []string{"Hello!", " How", " are", " you?"}
+	fmt.Println(piscine.BasicJoin(elems))
 }
