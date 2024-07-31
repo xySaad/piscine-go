@@ -1,8 +1,8 @@
 package piscine
 
 func IsPrintable(s string) bool {
-	for ch := range s {
-		if s[ch] < 32 || s[ch] > 126 {
+	for i := range s {
+		if s[i] < 32 || s[i] > 126 {
 			return false
 		}
 	}
