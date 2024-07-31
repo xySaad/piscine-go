@@ -7,10 +7,12 @@ import (
 )
 
 func main() {
+	argument1 := []rune(os.Args[0])
+
 	if len(os.Args) > 0 {
-		for i := 0; i < len(os.Args[0]); i++ {
-			if os.Args[0][i] != '/' && os.Args[0][i] != '.' {
-				z01.PrintRune(rune(os.Args[0][i]))
+		for i := range argument1 {
+			if argument1[i] != '/' && argument1[i] != '.' {
+				z01.PrintRune(argument1[i])
 			}
 		}
 		z01.PrintRune('\n')
