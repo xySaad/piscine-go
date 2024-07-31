@@ -8,8 +8,8 @@ import (
 
 func main() {
 	if len(os.Args) > 0 {
-		for _, args := range os.Args {
-			argTable := []rune(args)
+		for argsIndex := 1; argsIndex < len(os.Args); argsIndex++ {
+			argTable := []rune(os.Args[argsIndex])
 			for index := range argTable {
 				z01.PrintRune(argTable[index])
 			}
