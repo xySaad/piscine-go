@@ -6,7 +6,7 @@ import (
 	"github.com/01-edu/z01"
 )
 
-func main() {
+func ALo() {
 	if len(os.Args) > 0 {
 		for argsIndex := 1; argsIndex < len(os.Args); argsIndex++ {
 			argTable := []rune(os.Args[argsIndex])

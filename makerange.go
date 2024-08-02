@@ -7,7 +7,7 @@ func MakeRange(min, max int) []int {
 	arrayLength := max - min
 	newArray := make([]int, arrayLength)
 
-	for i := range arrayLength {
+	for i := 0; i <= arrayLength-1; i++ {
 		newArray[i] = i + min
 	}
 	return newArray
