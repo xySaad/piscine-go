@@ -5,7 +5,7 @@ func SplitWhiteSpaces(s string) []string {
 	result := []string{}
 	index := 0
 	for i := 0; i < len(runes); i++ {
-		if runes[i] == '\n' || runes[i] == ' ' {
+		if runes[i] == '\n' || runes[i] == ' ' || runes[i] == '\t' {
 			index++
 		} else {
 			if len(result) > index {
