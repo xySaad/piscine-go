@@ -14,7 +14,6 @@ func SplitWhiteSpaces(s string) []string {
 				result = append(result, string(runes[i]))
 			}
 		}
-
 	}
 	return result
 }
