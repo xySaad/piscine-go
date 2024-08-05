@@ -17,19 +17,11 @@ func main() {
 
 	setPoint(points)
 
-	z01.PrintRune('x')
-	z01.PrintRune(' ')
-	z01.PrintRune('=')
-	z01.PrintRune(' ')
-	z01.PrintRune('0' + int32(points.x/10))
-	z01.PrintRune('0' + int32(points.x%10))
-	z01.PrintRune(',')
-	z01.PrintRune(' ')
-	z01.PrintRune('y')
-	z01.PrintRune(' ')
-	z01.PrintRune('=')
-	z01.PrintRune(' ')
-	z01.PrintRune('0' + int32(points.y/10))
-	z01.PrintRune('0' + int32(points.y%10))
-	z01.PrintRune('\n')
+	printStr("x = 42, y = 21")
+}
+
+func printStr(s string) {
+	for _, r := range s {
+		z01.PrintRune(r)
+	}
 }
