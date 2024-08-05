@@ -30,7 +30,6 @@ func setPoint(ptr *point) {
 }
 
 func main() {
-
 	points := point{}
 
 	setPoint(&points)
