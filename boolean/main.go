@@ -25,7 +25,7 @@ func main() {
 	EvenMsg := "I have an even number of arguments"
 	OddMsg := "I have an odd number of arguments"
 
-	lengthOfArg := len(os.Args)
+	lengthOfArg := len(os.Args) - 1
 
 	if isEven(lengthOfArg) {
 		printStr(EvenMsg)
