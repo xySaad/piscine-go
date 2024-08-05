@@ -12,11 +12,9 @@ func main() {
 		println("Too many arguments")
 	} else {
 		fileYmkn, err := os.ReadFile(os.Args[1])
-
 		if err != nil {
 			return
 		}
-
 		fmt.Println(string(fileYmkn))
 	}
 }
