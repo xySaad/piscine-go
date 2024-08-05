@@ -7,16 +7,6 @@ type point struct {
 	y int
 }
 
-func numToString(num int) string {
-	var result string = ""
-
-	for num > 0 {
-		result = string(rune(num%10+'0')) + result
-		num /= 10
-	}
-	return result
-}
-
 func printStr(s string) {
 	for _, r := range s {
 		z01.PrintRune(r)
@@ -33,6 +23,16 @@ func main() {
 	points := point{}
 
 	setPoint(&points)
+
+	numToString := func(num int) string {
+		var result string = ""
+
+		for num > 0 {
+			result = string(rune(num%10+'0')) + result
+			num /= 10
+		}
+		return result
+	}
 
 	printStr("x = " + numToString(points.x) + ", y = " + numToString(points.y))
 }
