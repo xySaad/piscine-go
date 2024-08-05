@@ -9,12 +9,12 @@ func main() {
 	if len(os.Args) < 2 {
 		fmt.Println("File name missing")
 	} else if len(os.Args) > 2 {
-		fmt.Println("Too many arguments")
+		fmt.Print("Too many arguments")
 	} else {
 		fileYmkn, err := os.ReadFile(os.Args[1])
 		if err != nil {
 			return
 		}
-		fmt.Println(string(fileYmkn))
+		fmt.Print(string(fileYmkn))
 	}
 }
