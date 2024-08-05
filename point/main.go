@@ -12,6 +12,7 @@ func setPoint(ptr *Point) {
 	ptr.x = a
 	ptr.y = b
 }
+
 func printStr(s string) {
 	for _, r := range s {
 		z01.PrintRune(r)
