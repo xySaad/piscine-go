@@ -2,14 +2,14 @@ package piscine
 
 func Compact(ptr *[]string) int {
 	myslice := *ptr
-	myslice2 := []string{}
+	compactedSlice := []string{}
 
 	for i := 0; i < len(myslice); i++ {
 		if myslice[i] != "" {
-			myslice2 = append(myslice2, myslice[i])
+			compactedSlice = append(compactedSlice, myslice[i])
 		}
 	}
-	*ptr = myslice2
+	*ptr = compactedSlice
 
-	return len(myslice2)
+	return len(compactedSlice)
 }
