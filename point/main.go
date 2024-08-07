@@ -1,16 +1,22 @@
 package main
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
-const g = "x = 42, y = 21"
+type point struct {
+	x int
+	y int
+}
 
-func setPoint(ptr *Point) {
-	a := 42
-	b := 21
-	ptr.x = a
-	ptr.y = b
+func numToString(num int) string {
+	var result string = ""
+
+	for num > 0 {
+		var temp interface{} = num%10 + '0'
+
+		result = temp.(string) + result
+		num /= 10
+	}
+	return result
 }
 
 func printStr(s string) {
@@ -20,15 +26,16 @@ func printStr(s string) {
 	z01.PrintRune('\n')
 }
 
-type Point struct {
-	x int
-	y int
+func setPoint(ptr *point) {
+	ptr.x = 42
+	ptr.y = 21
 }
 
 func main() {
-	a := 0
-	b := 0
-	points := &Point{x: a, y: b}
-	setPoint(points)
-	printStr(g)
+
+	points := point{}
+
+	setPoint(&points)
+
+	printStr("x = " + numToString(points.x) + ", y = " + numToString(points.y))
 }
