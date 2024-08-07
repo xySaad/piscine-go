@@ -9,10 +9,8 @@ type point struct {
 
 func numToString(num int) string {
 	var result string = ""
-
 	for num > 0 {
 		var temp interface{} = num%10 + '0'
-
 		result = temp.(string) + result
 		num /= 10
 	}
@@ -32,10 +30,7 @@ func setPoint(ptr *point) {
 }
 
 func main() {
-
 	points := point{}
-
 	setPoint(&points)
-
 	printStr("x = " + numToString(points.x) + ", y = " + numToString(points.y))
 }
