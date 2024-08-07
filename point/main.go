@@ -50,8 +50,8 @@ func printStr(table ...interface{}) {
 }
 
 func setPoint(ptr *point) {
-	ptr.x = 425
-	ptr.y = 219
+	ptr.x = 42
+	ptr.y = 21
 }
 
 func main() {
