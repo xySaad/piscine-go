@@ -29,7 +29,6 @@ func intToRunes(n int) (result rune) {
 }
 
 func printStr(table ...interface{}) {
-
 	for _, r := range table {
 		switch VType := r.(type) {
 		case string:
@@ -51,8 +50,8 @@ func printStr(table ...interface{}) {
 }
 
 func setPoint(ptr *point) {
-	ptr.x = 42
-	ptr.y = 21
+	ptr.x = 425
+	ptr.y = 219
 }
 
 func main() {
